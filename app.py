@@ -48,7 +48,7 @@ if dia_semana == 4 and nomes[0] != dataHoje: ## nome[0] quarda a data da ultima 
         categorias = list(df)
         categoria = st.sidebar.selectbox('Selecione a categoria para apresentar na tabela', options = categorias)
         
-        st.title('aaaaaaaaa')
+        st.title('Dia e Quem traz :sunglasses:')
         if categoria == 'Segunda':
             df['Segunda']
         elif categoria == 'Terca':
@@ -60,7 +60,7 @@ if dia_semana == 4 and nomes[0] != dataHoje: ## nome[0] quarda a data da ultima 
         else:
             df['sexta']
     else:
-        st.title('bbbbbbb')
+        st.title('Lista de Quem Traz Paes :sunglasses:')
         df = pd.read_csv('listapaes.csv', sep = ';')       
         st.sidebar.markdown('## Filtro para a tabela')
         st.write(df.head())
@@ -75,7 +75,7 @@ else:
         categoria = st.sidebar.selectbox('Selecione a categoria para apresentar na tabela', options = categorias)
         st.sidebar.markdown('## Filtro para o gráfico')
 
-        st.title('aaaaaaaaa')
+        st.title('Dia e Quem traz :sunglasses:')
         if categoria == 'Segunda':
             df['Segunda']
         elif categoria == 'Terca':
@@ -87,7 +87,7 @@ else:
         else:
             df['Sexta']
     else:
-        st.title('bbbbbbb')
+        st.title('Lista de Quem Traz Paes :sunglasses:')
         df = pd.read_csv('listapaes.csv', sep = ';')       
         st.sidebar.markdown('## Filtro para a tabela')
         st.write(df.head())
