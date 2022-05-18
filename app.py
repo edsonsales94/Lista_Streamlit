@@ -19,7 +19,7 @@ dia_semana = calendar.weekday(ano, mes, dia) #atualizar na sexta / dia da semana
 nomes = np.loadtxt(fname = "nomes.txt", dtype=str)
 print(nomes, dataHoje)
 # se for sexta e a data da ultima atualizaçã 'nome[0] for diferente de hoje'
-if dia_semana == 2 and nomes[0] != dataHoje: ## nome[0] quarda a data da ultima atualização //data precisa ser diferente para atualizar uma vez no dia escolhido -> 'Sexta' // apos isso a data passa á ser igual impedindo atualizar ate a proxima sexta.
+if dia_semana == 4 and nomes[0] != dataHoje: ## nome[0] quarda a data da ultima atualização //data precisa ser diferente para atualizar uma vez no dia escolhido -> 'Sexta' // apos isso a data passa á ser igual impedindo atualizar ate a proxima sexta.
     nomes[0] = dataHoje
     n = nomes[6]
     nomes = np.delete(nomes,(6),axis=0)
